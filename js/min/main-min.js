@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#slide").click(function(){$("#box").slideToggle(1e3)}),$("#fade").click(function(){$("#box").fadeToggle(1e3)}),$("#box").click(function(){$("div, ul li:nth-child(2)").fadeTo(500,.5)})});
+$(document).ready(function(){$("button").click(function(){var l=$("input[name=fName]").val();$("h1").html("Hello, "+l+"!"),$('input[name="fName"]').val(""),$("ul").append("<li>"+l+"</li>")}),$(document).on("click","ul li",function(){$(this).remove()}),$(".clearAll").click(function(){$("ul").empty()})});

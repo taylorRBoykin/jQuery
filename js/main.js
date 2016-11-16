@@ -1,21 +1,33 @@
-// JQUERY
+$(document).ready(function() {
 
-$(document).ready(function(){
+    // VARIABLES
 
-  $('#slide').click(function(){
-    $('#box').slideToggle(1000);
-  });
 
-  $('#fade').click(function(){
-    $('#box').fadeToggle(1000);
-  });
 
-  // FADE TO .5
+    // START
 
-  $('#box').click(function(){
+    $('button').click(function() {
 
-    $('div, ul li:nth-child(2)').fadeTo(500, 0.5);
+        var $input = $('input[name=fName]').val();
+        $('h1').html('Hello, ' + $input + '!');
 
-  });
+        $('input[name="fName"]').val('');
+
+        $('ul').append('<li>' + $input + '</li>');
+
+    });
+
+    $(document).on('click', 'ul li', function() {
+
+        $(this).remove();
+
+    });
+
+
+    $('.clearAll').click(function() {
+
+        $('ul').empty();
+
+    });
 
 });

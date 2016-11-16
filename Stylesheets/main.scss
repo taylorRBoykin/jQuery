@@ -2,74 +2,50 @@
 
 // ------- variables
 
-$squareSize: 250px;
+$squareSize: 50px;
 
 // ------ START
 
-#box
+div
 {
     font-family: sans-serif;
+    font-size: 18px;
     line-height: $squareSize;
-    // display: none;
 
-    width: $squareSize;
+    width: $squareSize * 2;
     height: $squareSize;
-    margin: 0 auto;
+    margin: $squareSize / 10;
 
+    transition: 1s;
     text-align: center;
 
+    color: white;
     border-radius: 5px;
     background-color: #67bcfc;
 }
 
-#buttonContainer
+input[type='text']
 {
-    font-size: 0;
+    width: 120px;
+    height: 30px;
 
-    position: absolute;
-    top: 270px;
-
-    width: 100%;
-    margin: 20px 0;
-
-    text-align: center;
-}
-
-.button
-{
-    font-family: sans-serif;
-    font-size: 14px;
-    line-height: 60px;
-
-    display: inline-block;
-
-    width: 90px;
-    height: 60px;
-    margin: 0 10px;
-
-    transition: .33s;
-    text-align: center;
-    text-transform: uppercase;
-
-    color: #fff;
     border-radius: 5px;
-    background-color: #b61e36;
-
-    &:hover
-    {
-        font-size: 16px;
-    }
-    &:active
-    {
-        font-size: 15px;
-    }
 }
 
-ul
+ul li
 {
-    width: 20px;
+    line-height: 50px;
+
+    width: 70px;
+    height: 50px;
 
     list-style: none;
 
+    cursor: pointer;
     text-align: center;
+
+    &:nth-child(even)
+    {
+        background-color: #ccc;
+    }
 }
