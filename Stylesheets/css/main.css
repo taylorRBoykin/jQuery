@@ -9,6 +9,7 @@
   background-color: #67bcfc; }
 
 #buttonContainer {
+  font-size: 0;
   position: absolute;
   top: 270px;
   width: 100%;
@@ -20,8 +21,9 @@
   font-size: 14px;
   line-height: 60px;
   display: inline-block;
-  width: 100px;
+  width: 90px;
   height: 60px;
+  margin: 0 10px;
   transition: .33s;
   text-align: center;
   text-transform: uppercase;
@@ -32,3 +34,8 @@
     font-size: 16px; }
   .button:active {
     font-size: 15px; }
+
+ul {
+  width: 20px;
+  list-style: none;
+  text-align: center; }

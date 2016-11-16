@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#slide").click(function(){$("#box").slideToggle(1e3)}),$("#fade").click(function(){$("#box").fadeToggle(1e3)})});
+$(document).ready(function(){$("#slide").click(function(){$("#box").slideToggle(1e3)}),$("#fade").click(function(){$("#box").fadeToggle(1e3)}),$("#box").click(function(){$("div, ul li:nth-child(2)").fadeTo(500,.5)})});
